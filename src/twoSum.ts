@@ -1,3 +1,5 @@
+/** 两数之和(简单) */
+
 export const twoSum = (nums: number[], target: number) : number[]=> {
   const map = new Map<number, number>();
 
