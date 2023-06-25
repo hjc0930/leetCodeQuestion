@@ -1,12 +1,12 @@
 import { twoSum } from "../twoSum";
 
-describe("两数之和", () => {
+describe("Two number add", () => {
 
-  test('正确的情况', () => {
+  test('right', () => {
     expect(twoSum([1, 2, 3], 5)).toEqual([1, 2]);
   });
 
-  test("空情况", () => {
+  test("empty", () => {
     expect(twoSum([], 5)).toEqual([])
   })
 })

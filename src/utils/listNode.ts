@@ -7,9 +7,6 @@ export class ListNode<T = any> {
   }
 
   public toString() {
-    return "ListNode{" +
-      "val=" + this.value +
-      ", next=" + this.next +
-      '}';
+    return `ListNode{value=${this.value}, next=${this.next}}`
   }
 }

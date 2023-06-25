@@ -1,17 +1,24 @@
 import { ListNode } from "../utils/listNode";
 import { addTwoNumbers } from "../twoAdd";
 
-test("两数相加", () => {
-  const l1 = new ListNode(1);
-  l1.next = new ListNode(2);
+describe("Two numbers add testing", () => {
+  test("utils function testing", () => {
+    const listNode = new ListNode(3);
 
-  const l2 = new ListNode(2);
-  l2.next = new ListNode(3);
+    expect(listNode.toString()).toBe(`ListNode{value=3, next=null}`)
+  })
+  test("function testing", () => {
+    const l1 = new ListNode(1);
+    l1.next = new ListNode(7);
 
-  const result = addTwoNumbers(l1, l2);
+    const l2 = new ListNode(2);
+    l2.next = new ListNode(3);
 
-  const expectResult = new ListNode(3);
-  expectResult.next = new ListNode(5);
+    const result = addTwoNumbers(l1, l2);
 
-  expect(result).toEqual(expectResult);
+    const expectResult = new ListNode(3);
+    expectResult.next = new ListNode(1);
+
+    expect(result).toEqual(expectResult);
+  })
 })
