@@ -1,9 +1,15 @@
 export class ListNode<T = any> {
   public value: T;
-  public next: ListNode<T> | null;
+  public next: ListNode<T> | null = null;
 
   constructor(value: T) {
-    this.value =value;
-    this.next = null;
+    this.value = value;
+  }
+
+  public toString() {
+    return "ListNode{" +
+      "val=" + this.value +
+      ", next=" + this.next +
+      '}';
   }
 }

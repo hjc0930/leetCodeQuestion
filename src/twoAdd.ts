@@ -3,26 +3,34 @@
 import { ListNode } from "./utils/listNode";
 
 export const addTwoNumbers = (l1: ListNode, l2: ListNode): ListNode => {
-  const dummy = new ListNode(0);
-  let tmp = dummy;
-  let t = 0;
+  let head: ListNode | null = null, tail: ListNode | null = null;
 
-  while (l1 !== null || l2 !== null) {
-    const a = l1 !== null ? l1.value : 0;
-    const b = l2 !== null ? l2.value : 0;
+  let carry = 0;
 
-    t = a + b + t;
+  while (l1 != null || l2 != null) {
+      let n1 = l1 != null ? l1.value : 0;
+      let n2 = l2 != null ? l2.value : 0;
+      let sum = n1 + n2 + carry;
 
-    tmp.next = new ListNode(t % 10);
+    if (head === null) {
+      head = tail = new ListNode(sum % 10);
+    } else {
+      tail!.next = new ListNode(sum % 10);
+    }
+    carry = sum > 9 ? 1 : 0;
 
-    t /= 10;
+    if (l1 !== null) {
+      l1 = l1.next!;
+    }
 
-    tmp = tmp.next;
-
-    if(l1 !== null) l1 = l1.next!;
-    if(l2 !== null) l2 = l2.next!;
+    if (l2 !== null) {
+      l2 = l2.next!;
+    }
   }
 
-  if(t > 0) tmp.next = new ListNode(t);
-  return dummy.next!;
+  if (carry > 0) {
+    tail!.next = new ListNode(carry);
+  }
+
+  return head!;
 }
