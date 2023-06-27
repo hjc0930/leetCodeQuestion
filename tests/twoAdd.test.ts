@@ -1,5 +1,5 @@
-import { ListNode } from "../utils/listNode";
-import { addTwoNumbers } from "../twoAdd";
+import { ListNode } from "../src/utils/listNode";
+import { addTwoNumbers } from "../src/twoAdd";
 
 describe("Two numbers add testing", () => {
   test("utils function testing", () => {

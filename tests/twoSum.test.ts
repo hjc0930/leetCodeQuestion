@@ -1,4 +1,4 @@
-import { twoSum } from "../twoSum";
+import { twoSum } from "../src/twoSum";
 
 describe("Two number add", () => {
 

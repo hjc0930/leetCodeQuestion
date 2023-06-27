@@ -1,4 +1,4 @@
-import { noRepeatNums } from "../noRepeatNums";
+import { noRepeatNums } from "../src/noRepeatNums";
 
 describe("NoRepeatNums", () => {
   test("Empty str", () => {

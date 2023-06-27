@@ -4,6 +4,7 @@
  */
 
 export default {
+  testRegex: "(/tests/.*|\\.test)\\.ts$",
   collectCoverage: true,
   coverageDirectory: "coverage",
   preset: "ts-jest",
