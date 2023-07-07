@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1688308790621" clover="3.2.0">
-  <project timestamp="1688308790621" name="All files">
+<coverage generated="1688748861520" clover="3.2.0">
+  <project timestamp="1688748861520" name="All files">
     <metrics statements="11" coveredstatements="8" conditionals="7" coveredconditionals="4" methods="1" coveredmethods="1" elements="19" coveredelements="13" complexity="0" loc="11" ncloc="11" packages="1" files="1" classes="1"/>
     <file name="longestStr.ts" path="/Users/huangjiacheng/workspace/leetCodeQuestion/src/longestStr.ts">
       <metrics statements="11" coveredstatements="8" conditionals="7" coveredconditionals="4" methods="1" coveredmethods="1"/>
