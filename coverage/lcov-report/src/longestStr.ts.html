@@ -3,15 +3,15 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for longestStr.ts</title>
+    <title>Code coverage report for src/longestStr.ts</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="prettify.css" />
-    <link rel="stylesheet" href="base.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(sort-arrow-sprite.png);
+            background-image: url(../sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> longestStr.ts</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">src</a> longestStr.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">76.47% </span>
+                <span class="strong">95.23% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>13/17</span>
+                <span class='fraction'>20/21</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">57.14% </span>
+                <span class="strong">75% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>4/7</span>
+                <span class='fraction'>6/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">72.72% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>8/11</span>
+                <span class='fraction'>16/16</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -84,48 +84,69 @@
 <a name='L19'></a><a href='#L19'>19</a>
 <a name='L20'></a><a href='#L20'>20</a>
 <a name='L21'></a><a href='#L21'>21</a>
-<a name='L22'></a><a href='#L22'>22</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/** 最长回文子串 */
 &nbsp;
-export const longestStr = (s: string) =&gt; {
-  <span class="missing-if-branch" title="if path not taken" >I</span>if (!s.length) <span class="cstat-no" title="statement not covered" >return s;</span>
+export const longestStr = (s: string): string =&gt; {
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (!s || s.length &lt; 2) <span class="cstat-no" title="statement not covered" >return s;</span>
 &nbsp;
-  let len = s.length, left = 0, right = 0;
+  const strLen = s.length;
+  let maxStart = 0;  //最长回文串的起点
+  let maxEnd = 0;    //最长回文串的终点
+  let maxLen = 1;  //最长回文串的长度
 &nbsp;
-  const db: boolean[][] = [[]];
+  // let dp = new Array&lt;boolean[]&gt;(...new Array(5).fill("").map(() =&gt; new Array(5)));
+  let dp = Array.from(new Array&lt;boolean&gt;(strLen), () =&gt; new Array&lt;boolean&gt;(strLen))
 &nbsp;
-  for (let j = 0; j &lt; len; j++) {
-    for (let i = 0; i &lt;= j; i++) {
-      db[i][j] = (s.charAt(i) === s.charAt(j)) &amp;&amp; (j - i &lt; 2 || <span class="branch-2 cbranch-no" title="branch not covered" >db[i + 1][j - 1])</span>;
-&nbsp;
-      <span class="missing-if-branch" title="if path not taken" >I</span>if (db[i][j] &amp;&amp; j - i &gt; right - left) {
-<span class="cstat-no" title="statement not covered" >        left = i;</span>
-<span class="cstat-no" title="statement not covered" >        right = j;</span>
+  for (let r = 1; r &lt; strLen; r++) {
+    for (let l = 0; l &lt; r; l++) {
+      //r - l &lt;= 2 表示两者之间只有一个字符
+      if (s.charAt(l) === s.charAt(r) &amp;&amp; (r - l &lt;= 2 || <span class="branch-2 cbranch-no" title="branch not covered" >dp[l + 1][r - 1])</span>) {
+        dp[l][r] = true;
+        if (r - l + 1 &gt; maxLen) {
+          //更新最大值
+          maxLen = r - l + 1;
+          maxStart = l;
+          maxEnd = r;
+        }
       }
     }
   }
-&nbsp;
-<span class="cstat-no" title="statement not covered" >  return s.substring(left, right + 1);</span>
+  return s.substring(maxStart, maxEnd + 1);
 }</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -133,16 +154,16 @@ export const longestStr = (s: string) =&gt; {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-07-07T16:54:21.514Z
+                at 2023-07-08T17:57:00.478Z
             </div>
-        <script src="prettify.js"></script>
+        <script src="../prettify.js"></script>
         <script>
             window.onload = function () {
                 prettyPrint();
             };
         </script>
-        <script src="sorter.js"></script>
-        <script src="block-navigation.js"></script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
     </body>
 </html>
     
