@@ -1,4 +1,5 @@
 import { twoArrayMiddleNums } from "../src/twoArrayMiddleNums";
+import { describe, test, expect } from "vitest"
 
 describe("Test twoArrayMiddlenums", () => {
   test("[1, 2], [3]", () => {

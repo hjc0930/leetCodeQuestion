@@ -1,4 +1,5 @@
 import { noRepeatNums } from "../src/noRepeatNums";
+import { describe, test, expect } from "vitest"
 
 describe("NoRepeatNums", () => {
   test("Empty str", () => {

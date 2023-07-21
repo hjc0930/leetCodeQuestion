@@ -1,4 +1,5 @@
 import { twoSum } from "../src/twoSum";
+import { describe, test, expect } from "vitest"
 
 describe("Two number add", () => {
 

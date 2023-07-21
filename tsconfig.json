@@ -2,13 +2,14 @@
   "compilerOptions": {
     "target": "ESNext",
     "baseUrl": "./src",
+    "moduleResolution": "Bundler",
     "module": "ESNext",
-    "lib": ["ESNext", "ESNext.Array", "ES2023.Array", "DOM"],
+    "lib": ["ESNext", "DOM"],
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noEmit": true,
     "skipLibCheck": true,
-    "types": ["jest"]
+    "types": ["vitest"]
   }
 }
