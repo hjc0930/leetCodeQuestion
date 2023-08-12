@@ -1,6 +1,5 @@
 {
   "name": "question",
-  "type": "module",
   "scripts": {
     "test": "vitest",
     "coverage": "vitest run --coverage",
